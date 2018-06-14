@@ -1,0 +1,29 @@
+{
+  "name": "elipettingale/laravel-code-generator",
+  "description": "A package for quickly generating code for a custom cms.",
+  "type": "library",
+  "require": {
+    "laravel/framework": "^5.4|^5.5",
+    "php": "^7.0",
+    "elipettingale/case-converter": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "EliPett\\CodeGeneration\\": "src/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Elliot Pettingale",
+      "email": "elipettingale@gmail.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "EliPett\\CodeGeneration\\CodeGenerationServiceProvider"
+      ]
+    }
+  }
+}
