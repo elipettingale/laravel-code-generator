@@ -156,6 +156,10 @@ class RunGenerators extends Command
 
     private function loadParameter($parameter): void
     {
+        if ($this->config('should-persist-parameters', '1') === '1' && isset($this->parameters[lower_snake_case($parameter)])) {
+            return;
+        }
+
         if (!$value = $this->ask('Enter ' . upper_case($parameter))) {
             while ($value === null) {
                 $this->message($this->trans('parameter-is-required'), 'error');
