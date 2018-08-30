@@ -3,7 +3,7 @@
   "description": "A package for quickly generating code for a custom cms.",
   "type": "library",
   "require": {
-    "laravel/framework": "^5.4|^5.5",
+    "laravel/framework": "^5.4|^5.5|^5.6",
     "php": "^7.0",
     "elipettingale/case-converter": "^1.4"
   },
